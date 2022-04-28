@@ -1,0 +1,155 @@
+<!-- created by Danton Alexander -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<title>Catalogue Search</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<link href="style.css" rel="stylesheet">
+	<script src="web-jq.js"></script>
+	<?php include 'securelogin.php'; ?>
+</head>
+<body>
+	<div id="container">
+		<h1>Catalogue Search</h1>
+		<form>
+			<input type="search" placeholder="Type a Catagory, Title, or Author" size = "100">
+			<input type="submit" value="Search">
+			<input type="reset"  value="Clear">
+		</form>
+		<br>
+		<p><strong>OR</strong></p>
+		<h3>Select from a Catagory</h3> <br>
+
+<!--JS test btn-->
+			<hr>
+			<h4>Connection test section</h4>
+			<input type="button" id="btnJsTest" value="JS TEST" onclick="btnJsTest_onclick()">
+			<br>
+			<br>
+			<hr>
+		<div>
+			<form>
+<!--Book Check-->
+					<fieldset id="categoryselect">
+						<br>
+						<input type="checkbox" name="catSelectB" value="books"> <strong>All Books</strong>
+						<br>
+						<label for="book">Book Genres</label>
+							<select id="room" name="room"><br>
+								<option>
+									Select A Genre
+								</option>
+								<option value="childrensbooks">
+									Children's Books
+								</option>
+								<option value="graphicbooks">
+									Graphic Novels
+								</option>
+								<option value="instructionalbooks">
+									Instructional Books
+								</option>
+								<option value="judysbooks">
+									Judy's Books
+								</option>
+								<option value="novelbooks">
+									Novels - Fiction
+								</option>
+							</select>
+							<br>
+							<br>
+							<hr>
+							<br>
+<!--Movie Check-->
+						<input type="checkbox" name="catSelectM" value="movies"> <strong>All Movies</strong>
+						<br>
+						<label for="moviegenre">Movie Genres</label>
+							<select id="movie" name="room"><br>
+								<option>
+									Select A Genre
+								</option>
+								<option value="documentariesdvd">
+									Documentaries - DVD
+								</option>
+								<option value="kidsdvd">
+									Kid's - DVD
+								</option>
+								<option value="moviesbluray">
+									Movies - Bluray
+								</option>
+								<option value="moviesdvd">
+									Movies - DVD
+								</option>
+								<option value="tvshowsbluray">
+									TV Shows - Bluray
+								</option>
+								<option value="tvshowsdvd">
+									TV Shows - DVD
+								</option>
+							</select>
+							<br>
+							<br>
+							<hr>
+
+<!--Game Check-->
+						<br>
+						<input type="checkbox" name="catSelectG" value="games"> <strong>All Games</strong>
+						<br>
+						<label for="gamegenre">Game Format</label>
+							<select id="game" name="room"><br>
+								<option>
+									Select Game's Console
+								</option>
+								<option value="3dsgames">
+									3DS Games
+								</option>
+								<option value="gamecubegames">
+									GameCube - Games
+								</option>
+								<option value="ndsgames">
+									NDS - Games
+								</option>
+								<option value="pcphysicalgames">
+									PC Physical - Games
+								</option>
+								<option value="ps1games">
+									PS1 - Games
+								</option>
+								<option value="ps2games">
+									PS2 - Games
+								</option>
+								<option value="ps3games">
+									PS3 - Games
+								</option>
+								<option value="ps4games">
+									PS4 - Games
+								</option>
+								<option value="pspgames">
+									PSP - Games
+								</option>
+								<option value="wiigames">
+									Wii - Games
+								</option>
+								<option value="wiiugames">
+									Wii U - Games
+								</option>
+								<option value="xbox360games">
+									Xbox 360 - Games
+								</option>
+							</select>
+							<br><br>
+					</fieldset>
+					<br>
+				<input type="submit" value="Search">
+				<input type="reset"  value="Clear">
+			</form>
+
+		</div>
+
+	</div>
+
+	<noscript>This website requires JavaScript to be enabled.</noscript>
+
+</body>
+</html>
