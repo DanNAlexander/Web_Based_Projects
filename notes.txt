@@ -1,0 +1,6 @@
+To run in terminal:
+npm run dev
+
+
+In web browser:
+http://localhost:3000
